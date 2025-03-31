@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraternity Backyard Fundraiser</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #003C71, #FFB81C);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+
+        /* Main Content */
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #003C71;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        /* Image Section */
+        .image-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            gap: 20px;
+        }
+
+        .image-section img {
+            width: 48%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-section img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Donation Tiers Section */
+        .donation-tiers {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .donation-tier {
+            background-color: #003C71;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .donation-tier:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .donation-tier img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .donation-tier h3 {
+            font-size: 1.8rem;
+            color: #FFB81C;
+            margin-bottom: 15px;
+        }
+
+        .donation-tier p {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .donation-tier a {
+            background-color: #FFB81C;
+            color: #003C71;
+            text-decoration: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 0 auto;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .donation-tier a:hover {
+            background-color: #FF9E1B;
+            transform: scale(1.05);
+        }
+
+        /* Where Your Money is Going Section */
+        .where-your-money {
+            background-color: #FFB81C;
+            padding: 50px 0;
+            margin-top: 50px;
+            border-radius: 15px;
+        }
+
+        .where-your-money h2 {
+            font-size: 2.5rem;
+            color: #003C71;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .money-items {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four items in a row */
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .money-item {
+            background-color: white;
+            border: 2px solid #003C71;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .money-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .money-item h3 {
+            font-size: 1.8rem;
+            color: #003C71;
+            margin-bottom: 10px;
+        }
+
+        .money-item p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .money-item .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FF9E1B;
+            margin-bottom: 20px;
+        }
+
+        .money-item a {
+            background-color: #003C71;
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 0 auto;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .money-item a:hover {
+            background-color: #001E3C;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003C71;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #FFB81C;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .image-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-section img {
+                width: 80%;
+            }
+
+            .donation-tiers {
+                grid-template-columns: 1fr;
+            }
+
+            .donation-tier a {
+                width: 80%;
+            }
+
+            .money-items {
+                grid-template-columns: 1fr;
+            }
+
+            .money-item a {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Support the Transformation of Our Fraternity's Backyard</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h2>Why Your Contribution Matters</h2>
+        <p>We are excited to embark on a significant transformation of our fraternity’s backyard, creating a versatile, welcoming space for both current members and alumni. With your generous support, we aim to elevate our facilities and provide a lasting impact for future generations. Your contributions will help us fund key improvements that foster community engagement, relaxation, and camaraderie.</p>
+
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="backyard_before.jpg" alt="Current Backyard Setup">
+            <img src="backyard_plan.jpg" alt="Backyard Plan Layout">
+        </div>
+
+        <h2>Our Vision for the Backyard</h2>
+        <p>We are committed to creating a backyard space that will be a true asset to the fraternity. Our plans include:</p>
+        <ul>
+            <li><strong>New Fence:</strong> A stylish, secure perimeter to provide privacy and enhance the overall aesthetics of the space.</li>
+            <li><strong>Grill Area:</strong> A fully equipped outdoor cooking area, perfect for social gatherings and alumni events.</li>
+            <li><strong>Outdoor Lighting:</strong> Elegant and functional lighting to create an inviting atmosphere during evening events.</li>
+            <li><strong>Speakers:</strong> High-quality sound systems for music and announcements during fraternity activities.</li>
+        </ul>
+
+        <!-- Donation Tiers Section -->
+        <h2>Choose Your Level of Support</h2>
+        <div class="donation-tiers">
+            <!-- Bronze Tier -->
+            <div class="donation-tier">
+                <img src="bronze_tier.jpg" alt="Bronze Tier">
+                <h3>Bronze - $1-$99</h3>
+                <p>Your support will be recognized with a thank-you card and your name prominently displayed on our alumni weekend banner.</p>
+                <a href="payment.html">Donate</a>
+            </div>
+
+            <!-- Silver Tier -->
+            <div class="donation-tier">
+                <img src="silver_tier.jpg" alt="Silver Tier">
+                <h3>Silver - $100-$499</h3>
+                <p>In addition to the Bronze rewards, you will receive an invitation to our exclusive VIP backyard BBQ event.</p>
+                <a href="payment.html">Donate</a>
+            </div>
+
+            <!-- Gold Tier -->
+            <div class="donation-tier">
+                <img src="gold_tier.jpg" alt="Gold Tier">
+                <h3>Gold - $500+</h3>
+                <p>Your contribution earns you all previous rewards, plus a personalized engraved brick that will be permanently displayed in the backyard.</p>
+                <a href="payment.html">Donate</a>
+            </div>
+
+            <!-- Platinum Tier -->
+            <div class="donation-tier">
+                <img src="platinum_tier.jpg" alt="Platinum Tier">
+                <h3>Platinum - $1,000+</h3>
+                <p>As a Platinum donor, you will receive all previous rewards, a dedicated plaque with your name displayed in the backyard, and a VIP invitation to the grand opening event.</p>
+                <a href="payment.html">Donate</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Where Your Money is Going Section -->
+    <div class="where-your-money">
+        <h2>Where Your Contribution Goes</h2>
+        <div class="money-items">
+            <div class="money-item">
+                <img src="fence.jpg" alt="New Fence">
+                <h3>New Fence</h3>
+                <p>Our first priority is the installation of a high-quality fence to provide privacy and enhance the beauty of our outdoor space.</p>
+                <p class="price">$25,000</p>
+                <a href="payment.html">Contribute</a>
+            </div>
+
+            <div class="money-item">
+                <img src="grill_area.jpg" alt="Grill Area">
+                <h3>Grill Area</h3>
+                <p>Help us upgrade the grill area with premium grills, seating, and a beautiful firepit, ideal for socializing and hosting events.</p>
+                <p class="price">$3,500</p>
+                <a href="payment.html">Contribute</a>
+            </div>
+
+            <div class="money-item">
+                <img src="lighting.jpg" alt="Outdoor Lighting">
+                <h3>Outdoor Lighting</h3>
+                <p>We aim to install high-quality lighting to create an inviting atmosphere for evening activities and gatherings.</p>
+                <p class="price">$1,000</p>
+                <a href="payment.html">Contribute</a>
+            </div>
+
+            <div class="money-item">
+                <img src="speakers.jpg" alt="Speakers">
+                <h3>Sound System</h3>
+                <p>Your donation will help fund a state-of-the-art sound system, perfect for music and announcements during fraternity events.</p>
+                <p class="price">$3,500</p>
+                <a href="payment.html">Contribute</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Thank you for your continued support of our fraternity. Your contribution will make a lasting impact on our community.</p>
+        <p>If you have any questions, please don't hesitate to <a href="mailto:contact@fraternity.com">contact us</a>.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
