@@ -107,11 +107,12 @@
         }
 
         .donation-tier img {
-            width: 100%;
-            height: 180px;
+            width: 80%;
+            height: auto;
             object-fit: cover;
             border-radius: 10px;
             margin-bottom: 20px;
+            margin-left: 10%;
         }
 
         .donation-tier h3 {
@@ -164,8 +165,8 @@
         }
 
         .money-items {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* Four items in a row */
+            display: flex;
+            justify-content: space-between;
             gap: 40px;
             margin-top: 30px;
         }
@@ -179,6 +180,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            width: 23%;
         }
 
         .money-item img {
@@ -273,7 +275,13 @@
             }
 
             .money-items {
-                grid-template-columns: 1fr;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .money-item {
+                width: 80%;
+                margin-bottom: 30px;
             }
 
             .money-item a {
@@ -286,13 +294,13 @@
 
     <!-- Header Section -->
     <header>
-        <h1>Support the Transformation of Our Fraternity's Backyard</h1>
+        <h1>Help Us Build the Ultimate Backyard for the Fraternity!</h1>
     </header>
 
     <!-- Main Content Section -->
     <div class="container">
-        <h2>Why Your Contribution Matters</h2>
-        <p>We are excited to embark on a significant transformation of our fraternity’s backyard, creating a versatile, welcoming space for both current members and alumni. With your generous support, we aim to elevate our facilities and provide a lasting impact for future generations. Your contributions will help us fund key improvements that foster community engagement, relaxation, and camaraderie.</p>
+        <h2>Why We Need Your Help</h2>
+        <p>We're fundraising to create a brand new backyard that will serve as a perfect space for our fraternity's events, sports, and social gatherings. With your generous support, we’ll be able to create a comfortable and welcoming space that will serve both our current members and future generations.</p>
 
         <!-- Image Section -->
         <div class="image-section">
@@ -301,46 +309,46 @@
         </div>
 
         <h2>Our Vision for the Backyard</h2>
-        <p>We are committed to creating a backyard space that will be a true asset to the fraternity. Our plans include:</p>
+        <p>Here’s a look at the exciting upgrades we plan to make:</p>
         <ul>
-            <li><strong>New Fence:</strong> A stylish, secure perimeter to provide privacy and enhance the overall aesthetics of the space.</li>
-            <li><strong>Grill Area:</strong> A fully equipped outdoor cooking area, perfect for social gatherings and alumni events.</li>
-            <li><strong>Outdoor Lighting:</strong> Elegant and functional lighting to create an inviting atmosphere during evening events.</li>
-            <li><strong>Speakers:</strong> High-quality sound systems for music and announcements during fraternity activities.</li>
+            <li><strong>New Fence</strong> – A beautiful, durable fence to define the space and provide privacy.</li>
+            <li><strong>Grill Area</strong> – Paved area with new grills, chairs, a firepit, and a charming gazebo.</li>
+            <li><strong>Outdoor Lighting</strong> – Ambient lighting that will bring the space to life during evening events.</li>
+            <li><strong>Speakers</strong> – Surround sound for music and announcements during fraternity gatherings.</li>
         </ul>
 
         <!-- Donation Tiers Section -->
-        <h2>Choose Your Level of Support</h2>
+        <h2>Support Us: Choose a Donation Tier</h2>
         <div class="donation-tiers">
             <!-- Bronze Tier -->
             <div class="donation-tier">
-                <img src="bronze_tier.jpg" alt="Bronze Tier">
+                <img src="https://raw.githubusercontent.com/deltachapter/images/main/Bronze%20Tier%20Image.png?raw=true" alt="Bronze Tier">
                 <h3>Bronze - $1-$99</h3>
-                <p>Your support will be recognized with a thank-you card and your name prominently displayed on our alumni weekend banner.</p>
+                <p>As a thank you, you will receive a heartfelt card and your name will be displayed on our alumni weekend banner.</p>
                 <a href="payment.html">Donate</a>
             </div>
 
             <!-- Silver Tier -->
             <div class="donation-tier">
-                <img src="silver_tier.jpg" alt="Silver Tier">
+                <img src="https://raw.githubusercontent.com/deltachapter/images/main/Silver%20Tier%20Image.png?raw=true" alt="Silver Tier">
                 <h3>Silver - $100-$499</h3>
-                <p>In addition to the Bronze rewards, you will receive an invitation to our exclusive VIP backyard BBQ event.</p>
+                <p>In addition to the bronze rewards, you will receive an invitation to our VIP backyard BBQ event.</p>
                 <a href="payment.html">Donate</a>
             </div>
 
             <!-- Gold Tier -->
             <div class="donation-tier">
-                <img src="gold_tier.jpg" alt="Gold Tier">
+                <img src="https://raw.githubusercontent.com/deltachapter/images/main/Gold%20Tier%20Image.png?raw=true" alt="Gold Tier">
                 <h3>Gold - $500+</h3>
-                <p>Your contribution earns you all previous rewards, plus a personalized engraved brick that will be permanently displayed in the backyard.</p>
+                <p>With this contribution, you will receive all previous rewards plus a personalized engraved brick in the backyard!</p>
                 <a href="payment.html">Donate</a>
             </div>
 
             <!-- Platinum Tier -->
             <div class="donation-tier">
-                <img src="platinum_tier.jpg" alt="Platinum Tier">
-                <h3>Platinum - $1,000+</h3>
-                <p>As a Platinum donor, you will receive all previous rewards, a dedicated plaque with your name displayed in the backyard, and a VIP invitation to the grand opening event.</p>
+                <img src="https://raw.githubusercontent.com/deltachapter/images/main/Platinum%20Tier%20Image.png?raw=true" alt="Platinum Tier">
+                <h3>Platinum - $1000+</h3>
+                <p>As a Platinum donor, you will receive all previous rewards plus a private dinner with the fraternity brothers in the new backyard!</p>
                 <a href="payment.html">Donate</a>
             </div>
         </div>
@@ -348,37 +356,37 @@
 
     <!-- Where Your Money is Going Section -->
     <div class="where-your-money">
-        <h2>Where Your Contribution Goes</h2>
+        <h2>Where Your Money Is Going</h2>
         <div class="money-items">
             <div class="money-item">
-                <img src="fence.jpg" alt="New Fence">
+                <img src="https://raw.githubusercontent.com/deltachapter/images/main/Fence%20Picture.png?raw=true" alt="New Fence">
                 <h3>New Fence</h3>
-                <p>Our first priority is the installation of a high-quality fence to provide privacy and enhance the beauty of our outdoor space.</p>
+                <p>This will be one of the first steps in upgrading the backyard. Your contribution helps us cover materials and labor costs.</p>
                 <p class="price">$25,000</p>
                 <a href="payment.html">Contribute</a>
             </div>
 
             <div class="money-item">
-                <img src="grill_area.jpg" alt="Grill Area">
+                <img src="https://raw.githubusercontent.com/deltachapter/images/main/Unknown.jpeg?raw=true" alt="Grill Area">
                 <h3>Grill Area</h3>
-                <p>Help us upgrade the grill area with premium grills, seating, and a beautiful firepit, ideal for socializing and hosting events.</p>
+                <p>We are upgrading the grill area to create a more social space. Help fund our new grills, seating, and firepit.</p>
                 <p class="price">$3,500</p>
                 <a href="payment.html">Contribute</a>
             </div>
 
             <div class="money-item">
-                <img src="lighting.jpg" alt="Outdoor Lighting">
-                <h3>Outdoor Lighting</h3>
-                <p>We aim to install high-quality lighting to create an inviting atmosphere for evening activities and gatherings.</p>
-                <p class="price">$1,000</p>
-                <a href="payment.html">Contribute</a>
-            </div>
-
-            <div class="money-item">
-                <img src="speakers.jpg" alt="Speakers">
+                <img src="https://raw.githubusercontent.com/deltachapter/images/main/Sound%20System.png?raw=true" alt="Sound System">
                 <h3>Sound System</h3>
-                <p>Your donation will help fund a state-of-the-art sound system, perfect for music and announcements during fraternity events.</p>
-                <p class="price">$3,500</p>
+                <p>Help us build a sound system for the ultimate outdoor entertainment experience. Your support will go toward purchasing high-quality speakers and installation.</p>
+                <p class="price">$2,500</p>
+                <a href="payment.html">Contribute</a>
+            </div>
+
+            <div class="money-item">
+                <img src="https://raw.githubusercontent.com/deltachapter/images/main/Fence%20Lights.png?raw=true" alt="Outdoor Lighting">
+                <h3>Outdoor Lighting</h3>
+                <p>Light up the backyard for evening gatherings! Your contribution will go toward stylish lighting and speakers.</p>
+                <p class="price">$1,000</p>
                 <a href="payment.html">Contribute</a>
             </div>
         </div>
@@ -386,9 +394,10 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>Thank you for your continued support of our fraternity. Your contribution will make a lasting impact on our community.</p>
-        <p>If you have any questions, please don't hesitate to <a href="mailto:contact@fraternity.com">contact us</a>.</p>
+        <p>Thank you for supporting our fraternity! We can't wait to enjoy the new backyard together.</p>
+        <p>For any inquiries, feel free to <a href="mailto:info@fraternity.org">contact us</a>.</p>
     </footer>
+
 </body>
 </html>
 
