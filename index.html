@@ -24,28 +24,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   
-  <!-- Inline CSS for responsive image wrappers and top images -->
+  <!-- Inline CSS for responsive image boxes and reduced white space -->
   <style>
-    /* Styles for the two images at the top */
+    /* Styles for the two images at the top (current layout and backyard plan) */
     .top-images {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
-      margin-bottom: 2em;
+      margin-bottom: 1em; /* Reduced space below the top images section */
     }
     .top-images .image-box {
-      flex: 1 1 45%;
-      margin: 1em;
+      margin: 0.5em;
       text-align: center;
     }
     .top-images .image-box img {
+      max-width: 300px; /* Match other picture sizes */
       width: 100%;
       height: auto;
       display: block;
     }
     
-    /* The .img-wrapper uses a padding-bottom trick for a 3:2 aspect ratio (200/300 ≈ 66.67%) */
+    /* Minimize white space in the "Why We Need Your Help" and "Our Vision for the Backyard" sections */
+    .container {
+      margin: 0.5em 0; /* Reduced top and bottom margin */
+      padding: 0.5em;  /* Reduced padding */
+    }
+
+    /* The .img-wrapper uses the padding-bottom trick for a 3:2 aspect ratio (200/300 ≈ 66.67%) */
     .where-your-money .money-item .img-wrapper {
       width: 100%;
       max-width: 300px;
@@ -69,15 +75,15 @@
   </header>
 
   <main>
-    <!-- New Section for Top Images -->
+    <!-- New Section for Top Images (Current Layout and Backyard Plan) -->
     <section class="top-images" aria-labelledby="backyard-images">
       <h2 id="backyard-images" style="width:100%; text-align:center;">Backyard Overview</h2>
       <div class="image-box">
-        <img loading="lazy" src="https://raw.githubusercontent.com/deltachapter/images/main/Backyard%20Layout.png" alt="Current Backyard Layout">
+        <img loading="lazy" src="https://via.placeholder.com/600x400?text=Current+Backyard+Layout" alt="Current Backyard Layout">
         <p>Current Backyard Layout</p>
       </div>
       <div class="image-box">
-        <img loading="lazy" src="https://raw.githubusercontent.com/deltachapter/images/main/Backyard%20Renovation.png" alt="Backyard Plan">
+        <img loading="lazy" src="https://via.placeholder.com/600x400?text=Backyard+Plan" alt="Backyard Plan">
         <p>Backyard Plan</p>
       </div>
     </section>
@@ -216,8 +222,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
