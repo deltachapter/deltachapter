@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Fundraising for a brand new backyard for the fraternity. Contribute to building a space for brotherhood events, sports, and social gatherings." />
   <meta name="keywords" content="fraternity, backyard, fundraiser, donation, brotherhood, social events, renovation" />
   <meta property="og:title" content="Fraternity Backyard Fundraiser" />
@@ -24,17 +24,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   
-  <!-- Inline CSS adjustments -->
+  <!-- Inline CSS for the top backyard images and money-item images -->
   <style>
-    /* Top Section: Two images for current layout and backyard plan */
+    /* Top Images Section: Two images for Current Backyard Layout and Backyard Plan */
     .top-images {
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 1em;
-      margin: 0.5em 0;
+      margin-bottom: 1em;
     }
     .top-images .image-box {
-      width: 300px;  /* Same width as other images on the site */
+      width: 300px;  /* Same size as other images on your site */
       text-align: center;
     }
     .top-images .image-box img {
@@ -43,14 +44,7 @@
       display: block;
     }
     
-    /* Reduce vertical white space in content sections */
-    .container {
-      margin: 0.5em auto;  /* Reduced margins */
-      padding: 0.5em;      /* Reduced padding */
-      max-width: 800px;
-    }
-    
-    /* Responsive image wrapper for "Where Your Money Is Going" */
+    /* Retained styling for "Where Your Money Is Going" section images */
     .where-your-money .money-item .img-wrapper {
       width: 100%;
       max-width: 300px;
@@ -72,30 +66,33 @@
   <header role="banner">
     <h1>Help Us Transform Our Backyard!</h1>
   </header>
-  
+
   <main>
-    <!-- Top Images Section -->
+    <!-- Top Images Section for Backyard Layouts -->
     <section class="top-images" aria-labelledby="backyard-overview">
       <h2 id="backyard-overview" style="width:100%; text-align:center;">Backyard Overview</h2>
       <div class="image-box">
-        <img loading="lazy" src="https://via.placeholder.com/300x200?text=Current+Backyard+Layout" alt="Current Backyard Layout">
+        <img loading="lazy" src="https://raw.githubusercontent.com/deltachapter/images/main/Current%20Backyard%20Layout.png?raw=true" alt="Current Backyard Layout">
         <p>Current Backyard Layout</p>
       </div>
       <div class="image-box">
-        <img loading="lazy" src="https://via.placeholder.com/300x200?text=Backyard+Plan" alt="Backyard Plan">
+        <img loading="lazy" src="https://raw.githubusercontent.com/deltachapter/images/main/Backyard%20Plan.png?raw=true" alt="Backyard Plan">
         <p>Backyard Plan</p>
       </div>
     </section>
-    
-    <!-- "Why We Need Your Help" Section -->
+
+    <!-- "Why We Need Your Help" Section (reverting to original spacing) -->
     <section class="container" aria-labelledby="why-help">
       <h2 id="why-help">Why We Need Your Help</h2>
       <p>
-        We're fundraising to create a brand new backyard that will serve as a perfect space for our fraternity's brotherhood, alumni, and parent events. With your generous support, we’ll be able to create a comfortable and welcoming space for current members and future generations.
+        We're fundraising to create a brand new backyard that will serve as a perfect space 
+        for our fraternity's brotherhood, alumni, and parent events. With your 
+        generous support, we’ll be able to create a comfortable and welcoming space for current 
+        members and future generations.
       </p>
     </section>
-    
-    <!-- "Our Vision for the Backyard" Section -->
+
+    <!-- "Our Vision for the Backyard" Section (original spacing) -->
     <section class="container" aria-labelledby="vision">
       <h2 id="vision">Our Vision for the Backyard</h2>
       <p>Here’s a look at the exciting upgrades we plan to make:</p>
@@ -106,8 +103,8 @@
         <li><strong>Speakers</strong> – A surround sound system to make announcements on during alumni and parent events.</li>
       </ul>
     </section>
-    
-    <!-- Donation Section -->
+
+    <!-- Donation Section (unchanged) -->
     <section class="container" aria-labelledby="donate">
       <h2 id="donate">Make a Donation*</h2>
       <div class="donation-tiers">
@@ -115,11 +112,12 @@
           <img loading="lazy" src="https://raw.githubusercontent.com/deltachapter/images/main/Bronze%20Tier%20Image.png?raw=true" alt="Bronze Tier donation image">
           <h3>Bronze - $1-$99</h3>
           <p>
-            As a thank you, you will receive a heartfelt card and your name will be displayed on our alumni weekend banner next fall!
+            As a thank you, you will receive a heartfelt card and your name will be displayed on our 
+            alumni weekend banner next fall!
           </p>
           <a href="https://givetogether.aepifoundation.org/HousingSupport/chapters/1142" target="_blank" rel="noopener noreferrer" aria-label="Donate for Bronze Tier">Donate</a>
         </article>
-        
+
         <article class="donation-tier">
           <img loading="lazy" src="https://raw.githubusercontent.com/deltachapter/images/main/Silver%20Tier%20Image.png?raw=true" alt="Silver Tier donation image">
           <h3>Silver - $100-$499</h3>
@@ -128,7 +126,7 @@
           </p>
           <a href="https://givetogether.aepifoundation.org/HousingSupport/chapters/1142" target="_blank" rel="noopener noreferrer" aria-label="Donate for Silver Tier">Donate</a>
         </article>
-        
+
         <article class="donation-tier">
           <img loading="lazy" src="https://raw.githubusercontent.com/deltachapter/images/main/Gold%20Tier%20Image.png?raw=true" alt="Gold Tier donation image">
           <h3>Gold - $500-$999</h3>
@@ -137,7 +135,7 @@
           </p>
           <a href="https://givetogether.aepifoundation.org/HousingSupport/chapters/1142" target="_blank" rel="noopener noreferrer" aria-label="Donate for Gold Tier">Donate</a>
         </article>
-        
+
         <article class="donation-tier">
           <img loading="lazy" src="https://raw.githubusercontent.com/deltachapter/images/main/Platinum%20Tier%20Image.png?raw=true" alt="Platinum Tier donation image">
           <h3>Platinum - $1000+</h3>
@@ -151,8 +149,8 @@
         <em>All donations are tax-deductible to the extent allowed by law. A receipt will be provided for your records.</em>
       </p>
     </section>
-    
-    <!-- "Where Your Money Is Going" Section -->
+
+    <!-- "Where Your Money Is Going" Section (unchanged) -->
     <section class="where-your-money" aria-labelledby="money-usage">
       <h2 id="money-usage">Where Your Money Is Going</h2>
       <div class="money-items">
@@ -168,7 +166,7 @@
           <p class="price">$25,000</p>
           <a href="https://givetogether.aepifoundation.org/HousingSupport/chapters/1142" target="_blank" rel="noopener noreferrer" aria-label="Contribute to New Fence">Contribute</a>
         </article>
-        
+
         <!-- Grill Area -->
         <article class="money-item">
           <div class="img-wrapper">
@@ -181,7 +179,7 @@
           <p class="price">$3,500</p>
           <a href="https://givetogether.aepifoundation.org/HousingSupport/chapters/1142" target="_blank" rel="noopener noreferrer" aria-label="Contribute to Grill Area">Contribute</a>
         </article>
-        
+
         <!-- Sound System (Speakers) -->
         <article class="money-item">
           <div class="img-wrapper">
@@ -194,7 +192,7 @@
           <p class="price">$2,500</p>
           <a href="https://givetogether.aepifoundation.org/HousingSupport/chapters/1142" target="_blank" rel="noopener noreferrer" aria-label="Contribute to Sound System">Contribute</a>
         </article>
-        
+
         <!-- Fence Lighting -->
         <article class="money-item">
           <div class="img-wrapper">
@@ -210,7 +208,7 @@
       </div>
     </section>
   </main>
-  
+
   <footer role="contentinfo">
     <p>&copy; 2025 Fraternity Backyard Fundraiser. Together, we can create a space to cherish for years to come!</p>
     <p>For any inquiries, feel free to <a href="mailto:nateduffy03@gmail.com">contact us</a>.</p>
