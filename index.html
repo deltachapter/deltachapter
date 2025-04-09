@@ -24,15 +24,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   
-  <!-- Inline CSS for uniform responsive images in the "Where Your Money Is Going" section -->
+  <!-- Inline CSS for responsive image wrappers and top images -->
   <style>
-    /* The img-wrapper uses a padding-bottom trick for a 3:2 aspect ratio (200/300 ≈ 66.67%) */
+    /* Styles for the two images at the top */
+    .top-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 2em;
+    }
+    .top-images .image-box {
+      flex: 1 1 45%;
+      margin: 1em;
+      text-align: center;
+    }
+    .top-images .image-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    /* The .img-wrapper uses a padding-bottom trick for a 3:2 aspect ratio (200/300 ≈ 66.67%) */
     .where-your-money .money-item .img-wrapper {
       width: 100%;
-      max-width: 300px;   /* Maximum width on larger screens */
+      max-width: 300px;
       position: relative;
-      padding-bottom: 66.67%; /* 3:2 aspect ratio */
-      margin: 0 auto;     /* Center the container */
+      padding-bottom: 66.67%;
+      margin: 0 auto;
     }
     .where-your-money .money-item .img-wrapper img {
       position: absolute;
@@ -40,7 +59,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: contain; /* Show the whole picture without cropping */
+      object-fit: contain;
     }
   </style>
 </head>
@@ -50,6 +69,19 @@
   </header>
 
   <main>
+    <!-- New Section for Top Images -->
+    <section class="top-images" aria-labelledby="backyard-images">
+      <h2 id="backyard-images" style="width:100%; text-align:center;">Backyard Overview</h2>
+      <div class="image-box">
+        <img loading="lazy" src="https://via.placeholder.com/600x400?text=Current+Backyard+Layout" alt="Current Backyard Layout">
+        <p>Current Backyard Layout</p>
+      </div>
+      <div class="image-box">
+        <img loading="lazy" src="https://via.placeholder.com/600x400?text=Backyard+Plan" alt="Backyard Plan">
+        <p>Backyard Plan</p>
+      </div>
+    </section>
+
     <section class="container" aria-labelledby="why-help">
       <h2 id="why-help">Why We Need Your Help</h2>
       <p>
@@ -116,7 +148,7 @@
       </p>
     </section>
 
-    <!-- Updated "Where Your Money Is Going" Section -->
+    <!-- "Where Your Money Is Going" Section -->
     <section class="where-your-money" aria-labelledby="money-usage">
       <h2 id="money-usage">Where Your Money Is Going</h2>
       <div class="money-items">
@@ -179,11 +211,12 @@
     <p>&copy; 2025 Fraternity Backyard Fundraiser. Together, we can create a space to cherish for years to come!</p>
     <p>For any inquiries, feel free to <a href="mailto:nateduffy03@gmail.com">contact us</a>.</p>
     <p class="legal">
-      *Donations are processed through the Alpha Epsilon Pi Foundation, a registered 501(c)(3) nonprofit organization. 
+      *Donations are processed through the Alpha Epsilon Pi Foundation, a registered 501(c)(3) nonprofit organization.
     </p>
   </footer>
 </body>
 </html>
+
 
 
 
