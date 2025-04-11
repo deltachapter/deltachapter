@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   
-  <!-- Inline CSS for the backyard overview and money-item images -->
+  <!-- Inline CSS for the backyard overview, key caption, and money-item images -->
   <style>
     /* Backyard Overview Section:
        The heading will be centered, and the images will be placed in a flex container below the heading. */
@@ -48,6 +48,17 @@
       width: 100%;
       height: auto;
       display: block;
+    }
+    /* Style the figure for centered content and spacing */
+    figure {
+      margin: 0;
+      text-align: center;
+    }
+    figcaption {
+      margin-top: 0.5em;
+      font-style: italic;
+      color: #555;
+      padding: 0 1em;
     }
     
     /* Retained styling for "Where Your Money Is Going" section images */
@@ -85,15 +96,17 @@
       </p>
     </section>
 
-    <!-- Backyard Overview Section (moved below the Why We Need Your Help section) -->
+    <!-- Backyard Overview Section (updated) -->
     <section class="backyard-overview" aria-labelledby="backyard-overview">
       <h2 id="backyard-overview">Backyard Overview</h2>
       <div class="top-images">
         <div class="image-box">
-        </div>
-        <div class="image-box">
-          <img loading="lazy" src="https://raw.githubusercontent.com/deltachapter/images/main/Backyard%20Renovation.png?raw=true" alt="Backyard Plan">
-          <p>Backyard Plan</p>
+          <figure>
+            <img loading="lazy" src="https://raw.githubusercontent.com/deltachapter/images/main/Backyard%20Renovation.png?raw=true" alt="Backyard Plan">
+            <figcaption>
+              <p><strong>Key:</strong> This plan outlines the major landscaping changes and features for the backyard renovation. (Add additional explanations as needed.)</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -222,5 +235,6 @@
   </footer>
 </body>
 </html>
+
 
 
