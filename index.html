@@ -49,16 +49,16 @@
       height: auto;
       display: block;
     }
-    /* Style the figure for centered content and spacing */
-    figure {
-      margin: 0;
-      text-align: center;
-    }
-    figcaption {
-      margin-top: 0.5em;
-      font-style: italic;
-      color: #555;
+    /* Key Section styling to span full width and left-align the text */
+    .key-section {
+      width: 100%;
+      text-align: left;
+      margin-top: 1em;
       padding: 0 1em;
+      box-sizing: border-box;
+    }
+    .key-section p {
+      margin: 0.5em 0;
     }
     
     /* Retained styling for "Where Your Money Is Going" section images */
@@ -96,25 +96,7 @@
       </p>
     </section>
 
-    <!-- Backyard Overview Section (updated) -->
-    <section class="backyard-overview" aria-labelledby="backyard-overview">
-      <h2 id="backyard-overview">Backyard Overview</h2>
-      <div class="top-images">
-        <div class="image-box">
-          <figure>
-            <img loading="lazy" src="https://raw.githubusercontent.com/deltachapter/images/main/Backyard%20Renovation.png?raw=true" alt="Backyard Plan">
-            <figcaption>
-              <p><strong>Key:</strong> This plan outlines the major landscaping changes and features for the backyard renovation. Brown Border Around House: This is where the fence is going to go
-              Yellow Dots on the Fence: This is where we plan on putting in lights to keep the entire backyard lit.
-              Black Dots on the Fence: This is where the permanent speakers are going to go.
-              Red and Orange Circle in the Upper Right Hand Side of the Fenced in Area: This is the new Grill Area. </p>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- "Our Vision for the Backyard" Section (original spacing) -->
+    <!-- "Our Vision for the Backyard" Section (moved up) -->
     <section class="container" aria-labelledby="vision">
       <h2 id="vision">Our Vision for the Backyard</h2>
       <p>Here’s a look at the exciting upgrades we plan to make:</p>
@@ -124,6 +106,23 @@
         <li><strong>Outdoor Lighting</strong> – Ambient lighting that will provide the brothers with safety at night.</li>
         <li><strong>Speakers</strong> – A surround sound system to make announcements on during alumni and parent events.</li>
       </ul>
+    </section>
+
+    <!-- Backyard Overview Section (updated) -->
+    <section class="backyard-overview" aria-labelledby="backyard-overview">
+      <h2 id="backyard-overview">Backyard Overview</h2>
+      <div class="top-images">
+        <div class="image-box">
+          <img loading="lazy" src="https://raw.githubusercontent.com/deltachapter/images/main/Backyard%20Renovation.png?raw=true" alt="Backyard Plan">
+        </div>
+      </div>
+      <div class="key-section">
+        <p><strong>Key:</strong></p>
+        <p>Brown Border Around House: This is where the fence is going to go.</p>
+        <p>Yellow Dots on the Fence: This is where we plan on putting in lights to keep the entire backyard lit.</p>
+        <p>Black Dots on the Fence: This is where the permanent speakers are going to go.</p>
+        <p>Red and Orange Circle in the Upper Right Hand Side of the Fenced in Area: This is the new Grill Area.</p>
+      </div>
     </section>
 
     <!-- Donation Section (unchanged) -->
@@ -238,6 +237,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
